@@ -34,22 +34,37 @@
       cursor: pointer;
     }
     #modal {
-      /* display: none; */
+      display: none;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      display: flex;
+      /* display: flex; */
       justify-content: center;
       align-items: center;
     }
     #modal > section {
-      width: 50%;
-      height: 50%;
+      width: 30%;
+      height: 20%;
       background-color: #fff;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #modal > section > div {
+      height: 20%;
+    }
+    #modal > section  input , #modal > section select{
+      font-size: 15px;
+    }
+    #modal > section button {
+      width: 100px;
+      height: 30px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -74,6 +89,7 @@
   </div>
   <div id="modal">
       <section>
+        <h2>일정 추가</h2>
         <div>
           <select aria-label="type">
             <option value="exercise">운동</option>
