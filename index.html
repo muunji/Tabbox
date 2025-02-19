@@ -119,7 +119,9 @@
       let select = document.getElementsByTagName('select')[0]
       let selectValue = select.options[select.selectedIndex].value;
       let input = document.querySelector('#modal input');
-      // if()
+      if(selectValue && input.value){
+        console.log('test')
+      }
     })
     //[ ]칸에는 색있는 원 모양으로 보임
     //[ ]checkbox 선택하면 선택한 내용만 보이기기
