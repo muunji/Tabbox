@@ -105,7 +105,7 @@
   </div>
 
   <script>
-    //[ ]div 클릭하면 modal창 나옴
+    //[x]div 클릭하면 modal창 나옴
     let divs = document.querySelectorAll('section:nth-child(2)>div')
     divs.forEach(div=>{
       div.addEventListener('click',()=>{
@@ -114,6 +114,10 @@
       })
     })
     //[ ]내용 입력하면 data-*에 저장됨
+    let checkBtn = document.getElementsByTagName('button')[0];
+    checkBtn.addEventListener('click',()=>{
+      
+    })
     //[ ]칸에는 색있는 원 모양으로 보임
     //[ ]checkbox 선택하면 선택한 내용만 보이기기
   </script>
